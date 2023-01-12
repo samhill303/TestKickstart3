@@ -8,6 +8,7 @@ jobs:
   call-kmmbridge-publish:
     permissions:
       contents: write
+      packages: write
     uses: touchlab/KMMBridgeGithubWorkflow/.github/workflows/faktorybuildbranches.yml@v0.6
     with:
       publishTask: kmmBridgePublish publishAndroidDebugPublicationToGitHubPackagesRepository publishAndroidReleasePublicationToGitHubPackagesRepository
